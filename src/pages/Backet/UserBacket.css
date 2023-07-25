@@ -1,0 +1,11 @@
+.swal-footer{
+    display: flex;
+    justify-content: center;
+}
+.swal-button{
+margin-top: 20px;
+}
+
+.swal-text{
+    font-size: 22px;
+}

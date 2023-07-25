@@ -1,0 +1,13 @@
+.time-line {
+  animation: timeline 2.7s infinite ;
+  transform: translateX(-100%);
+}
+
+@keyframes timeline {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

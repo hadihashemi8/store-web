@@ -1,0 +1,4 @@
+a.active{
+    border-color: var(--main-blue);
+    color: var(--main-blue);
+}

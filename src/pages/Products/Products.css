@@ -1,0 +1,9 @@
+.MuiSlider-track{
+    height: 100px;
+    background-color: red;
+    padding: 2px;
+}
+
+.MuiTypography-root{
+    font-family: 'Nian' !important;
+}

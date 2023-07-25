@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Nian";
+  src: url("/font/Shabnam-Light.ttf");
+}
+@layer utilities {
+  @layer responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
+
+
+:root {
+  --main-blue: #240e8b;
+  --main-gray: #F4F5F9;
+  --main-white: #FFFFFF;
+  --main-gold: #FACC15;
+}
+
+body {
+  font-family: "Nian";
+  word-spacing: 3px;
+
+  /* scroll-behavior: smooth; */
+}
+
+
+/* hide number inputs arrows  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

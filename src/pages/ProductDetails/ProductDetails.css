@@ -1,0 +1,26 @@
+/* color box section start */
+
+.radio span::after {
+
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(59, 59, 245);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: block;
+}
+
+.radio input[type="radio"]:checked~span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* color box section end */
+
+li.active{
+    transition: 0.5;
+    border-color: var(--main-blue);
+}
