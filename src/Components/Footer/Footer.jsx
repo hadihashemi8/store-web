@@ -2,6 +2,17 @@ import React from 'react'
 import { AiFillYoutube, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { BsWhatsapp } from 'react-icons/bs'
 import { FiInstagram } from 'react-icons/fi'
+import img1 from "/./src/assets/footer/contact-us.svg"
+import img2 from "/./src/assets/footer/delivery.svg"
+import img3 from "/./src/assets/footer/payment-terms.svg"
+import img4 from "/./src/assets/footer/return-policy.svg"
+import img5 from "/./src/assets/footer/origin-guarantee.svg"
+import namad1 from "/./src/assets/eNamadPic/enamad.png"
+import namad2 from "/./src/assets/eNamadPic/rezi.png"
+import namad3 from "/./src/assets/eNamadPic/kasbokar.png"
+
+
+
 
 export default function Footer() {
     return (
@@ -10,24 +21,24 @@ export default function Footer() {
 
                 <div className='flex flex-wrap  justify-around '>
                     <div className='  flex flex-col justify-between items-center w-36  my-4'>
-                        <img className='w-16 h-16 ' src="/./src/assets/footer/contact-us.svg" alt="" />
+                        <img className='w-16 h-16 ' src={img1} alt="" />
                         <h3 className='text-center my-2 '>پشتیبانی 24 ساعته</h3>
                     </div>
                     <div className='  flex flex-col justify-between items-center w-36  my-4 '>
-                        <img className='w-16 h-16 ' src="/./src/assets/footer/delivery.svg" alt="" />
+                        <img className='w-16 h-16 ' src={img2} alt="" />
                         <h3 className='text-center my-2 '>تحویل اکسپرس</h3>
                     </div>
                     <div className='  flex flex-col justify-between items-center w-36  my-4'>
-                        <img className='w-16 h-16 ' src="/./src/assets/footer/payment-terms.svg" alt="" />
+                        <img className='w-16 h-16 ' src={img3} alt="" />
                         <h3 className='text-center my-2 '>پرداخت در محل</h3>
                     </div>
                     <div className='  flex flex-col justify-between items-center w-  my-4'>
-                        <img className='w-16 h-16 ' src="/./src/assets/footer/return-policy.svg" alt="" />
+                        <img className='w-16 h-16 ' src={img4} alt="" />
                         <h3 className='text-center my-2 '>۷ روز ضمانت بازگشت
                         </h3>
                     </div>
                     <div className='  flex flex-col justify-between items-center w-36  my-4'>
-                        <img className='w-16 h-16 ' src="/./src/assets/footer/origin-guarantee.svg" alt="" />
+                        <img className='w-16 h-16 ' src={img5} alt="" />
                         <h3 className='text-center my-2 '>ضمانت اصل بودن کالا</h3>
                     </div>
                 </div>
@@ -101,23 +112,23 @@ export default function Footer() {
                     </div>
                     <div className='flex items-center justify-between mt-4 md:mt-0'>
                         <div className='w-24 h-24 p-4 border-[1px] rounded-md border-gray-400 transition-all duration-300 hover:border-main-blue m-2'>
-                            <img className='w-16 h-16' src="/./src/assets/eNamadPic/enamad.png" alt="" />
+                            <img className='w-16 h-16' src={namad1} alt="" />
                         </div>
                         <div className='w-24 h-24 p-4 border-[1px] rounded-md border-gray-400 transition-all duration-300 hover:border-main-blue m-2'>
-                            <img className='w-16 h-16' src="/./src/assets/eNamadPic/rezi.png" alt="" />
+                            <img className='w-16 h-16' src={namad2} alt="" />
                         </div>
                         <div className='w-24 h-24 p-4 border-[1px] rounded-md border-gray-400 transition-all duration-300 hover:border-main-blue m-2'>
-                            <img className='w-16 h-16' src="/./src/assets/eNamadPic/kasbokar.png" alt="" />
+                            <img className='w-16 h-16' src={namad3} alt="" />
                         </div>
-                     
+
                     </div>
                 </div>
 
 
             </div>
-                <div className='p-4 flex items-center justify-around bg-gray-100'>
-                    <h2 className=' text-center'>برای استفاده از مطالب فروشگاه، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت شما است.</h2>
-                </div>
+            <div className='p-4 flex items-center justify-around bg-gray-100'>
+                <h2 className=' text-center'>برای استفاده از مطالب فروشگاه، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت شما است.</h2>
+            </div>
         </div>
     )
 }

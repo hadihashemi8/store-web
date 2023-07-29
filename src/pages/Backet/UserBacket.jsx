@@ -34,14 +34,11 @@ export default function UserBacket() {
     const [offerCode, setOfferCode] = useState('')
 
     useEffect(() => {
-        console.log(products);
+        
         setAllOfferCodes(offerCodes)
     }, [offerCodes])
 
-    useEffect(() => {
-        console.log(products);
-
-    }, [])
+    
 
 
     const activeOfferCode = () => {
@@ -193,7 +190,7 @@ export default function UserBacket() {
                                                     <div className='flex flex-col sm:flex-row  justify-between items-center '>
                                                         <div className='flex flex-col items-center small:flex-row'>
                                                             <input value={offerCode.code || offerCode} onChange={changeHandler} type="text" placeholder='کد تخفیف را وارد کنید' className='rounded-lg text-center bg-white p-2 outline-none small:w-40' />
-                                                            <BiPaste onClick={getCopyText} className='mr-1 text-2xl cursor-pointer' />
+                                                            {/* <BiPaste onClick={getCopyText} className='mr-1 text-2xl cursor-pointer' /> */}
                                                         </div>
 
                                                         <button onClick={activeOfferCode} className='mt-6 sm:mt-0 bg-green-500 p-2 text-white'>اعمال کد تخیفیف</button>

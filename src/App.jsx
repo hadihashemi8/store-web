@@ -1,4 +1,4 @@
-import { useRoutes } from "react-router-dom"
+import { useLocation, useRoutes } from "react-router-dom"
 import routes from "./router/router"
 import './App.css'
 import userInfos from "./context/context"
@@ -10,6 +10,8 @@ import 'aos/dist/aos.css';
 
 function App() {
 
+  const location = useLocation()
+  const { pathname } = location
   const routers = useRoutes(routes)
   const [isLogin, setIsLogin] = useState(true)
   const [showBackBtn, setShowBackBtn] = useState(false)
@@ -36,7 +38,9 @@ function App() {
     setIsLogin(false)
   }
 
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 })
+  }, [pathname])
 
 
 

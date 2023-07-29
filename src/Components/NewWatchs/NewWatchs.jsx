@@ -14,7 +14,7 @@ export default function NewWatchs() {
                         مشاهده همه</button>
                 </div>
                 <div className='w-full mt-6   '>
-                   <ProductsSlider products={datas.allProducts}/>
+                   <ProductsSlider products={datas.newatchs}/>
                 </div>
             </div>
         </div>

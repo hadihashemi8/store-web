@@ -10,7 +10,7 @@ import slide1 from "/./src/assets/main-slide/slide1.jpg"
 import slide2 from "/./src/assets/main-slide/slide2.jpg"
 import slide3 from "/./src/assets/main-slide/slide3.jpg"
 import slide4 from "/./src/assets/main-slide/slide4.jpg"
-
+import datas from "../../datas/datas";
 
 
 
@@ -22,20 +22,7 @@ const sliderImg = [
     { id: 4, src: slide4 },
 ]
 
-const offerImg = [
-    {
-        id: 1, src: "./src/assets/main-offer/offer1.jpg", name: 'تبلت اپل مدل iPad mini 8.3 inch 2021-MK7M3LL/A ظرفیت 6 4 گیگابایت'
-    },
-    {
-        id: 2, src: "./src/assets/main-offer/offer2.jpg", name: 'تبلت اپل مدل iPad mini 8.3 inch 2021-MK7M3LL/A ظرفیت 6 4 گیگابایت'
-    },
-    {
-        id: 3, src: "./src/assets/main-offer/offer3.jpg", name: 'تبلت اپل مدل iPad mini 8.3 inch 2021-MK7M3LL/A ظرفیت 6 4 گیگابایت'
-    },
-    {
-        id: 4, src: "./src/assets/main-offer/offer4.jpg", name: 'تبلت اپل مدل iPad mini 8.3 inch 2021-MK7M3LL/A ظرفیت 6 4 گیگابایت'
-    },
-]
+
 
 
 export default function App() {
@@ -82,10 +69,9 @@ export default function App() {
                     modules={[Autoplay, Navigation]}
                     className="mySwiper w-full"
                 >
-                    {offerImg.map(img => (
+                    {datas.mostSellInLastWeek.map(img => (
                         <SwiperSlide >
                             <MainOffer {...img} />
-
                         </SwiperSlide>
                     ))}
 

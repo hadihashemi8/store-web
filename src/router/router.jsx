@@ -7,7 +7,7 @@ import UserBacket from "../pages/Backet/UserBacket";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Products from "../pages/Products/Products";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
-import Login from "../pages/login/Login";
+import Login from "../pages/Login/Login";
 import OfferCodes from "../pages/OfferCodes/OfferCodes";
 
 const routes = [

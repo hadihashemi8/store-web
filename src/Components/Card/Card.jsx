@@ -46,7 +46,7 @@ export default function Card(props) {
 
 
     return (
-        <div className='relative rounded-lg group overflow-hidden bg-blue-100 h-full'>
+        <div className='relative rounded-lg group overflow-hidden   shadow-[0_0_5px_rgba(0,0,0,0.1)] h-full'>
             <Link to={`/ProductDetails/${product.id}`}>
                 <div className={`w-full h-full flex flex-col bg-white items-center justify-between   cursor-pointer pb-4 ${props.shadow && ""}`}>
                     <div className='p-3 flex items-center justify-center '>
@@ -63,7 +63,7 @@ export default function Card(props) {
                 </div>
             </Link>
 
-            <div className='absolute -top-full group-hover:top-0  duration-500  left-0  w-full h-2/3 flex flex-col items-center justify-between p-2 '>
+            <div className='absolute  z-10 top-0 lg:-top-full lg:group-hover:top-0  duration-500  left-0  w-full h-2/3 flex flex-col items-center justify-between p-2 '>
                 <div className=' self-end'>
                     <Tooltip title="جزئیات" placement="right-start">
                         <Link to={`/ProductDetails/${product.id}`}>

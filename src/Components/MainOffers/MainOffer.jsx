@@ -4,6 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import './MainOffer.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,12 +13,13 @@ export default function MainOffer(props) {
 
     return (
 
-            <div className=' w-full'>
-                <h4 className=' text-xl'>پیشنهاد لحظه ای</h4>
-                <div className='time-line    h-[2px] w-[120%] bg-blue-800 mt-2'></div>
+        <div className=' w-full'>
+            <h4 className=' text-xl'>پیشنهاد لحظه ای</h4>
+            <div className='time-line    h-[2px] w-[120%] bg-blue-800 mt-2'></div>
+            <Link to={`/ProductDetails/${props.id}`}>
                 <div className='flex flex-col items-center'>
                     <div >
-                        <img  src={props.src} alt="" />
+                        <img src={props.src} alt="" />
                     </div>
                     <div className='flex flex-col items-center p-4'>
                         <p>{props.name}
@@ -31,8 +33,7 @@ export default function MainOffer(props) {
                         </div>
                     </div>
                 </div>
-
-
-            </div>
+            </Link>
+        </div>
     )
 }

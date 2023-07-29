@@ -23,6 +23,7 @@ export default function OfferCodes() {
 
 
     useEffect(() => {
+        console.log(offerCodes);
         setAllOfferCodes(offerCodes)
     }, [offerCodes])
 
@@ -35,7 +36,7 @@ export default function OfferCodes() {
         navigator.clipboard.writeText(itemCode)
 
         toast(' کد تخفیف کپی شد', {
-            position: "top-right",
+            position: "bottom-center",
             autoClose: 1000,
             hideProgressBar: true,
             closeOnClick: true,
@@ -43,6 +44,7 @@ export default function OfferCodes() {
             draggable: true,
             progress: false,
             theme: "light",
+            style:{width:"50%" , margin:"10px auto"}
         });
     }
 
@@ -52,7 +54,7 @@ export default function OfferCodes() {
             <NavBar />
             <div className='p-4 bg-main-gray'>
                 <div className='rounded-lg  shadow-[0_0_5px_rgba(0,0,0,0.1)]  bg-white p-4'>
-                    {allOfferCodes.length > 0 ? (
+                    {allOfferCodes?.length > 0 ? (
                         <>
                             <div className='grid gap-4 grid-cols-1 small:grid-cols-2 sm:grid-cols-3 '>
                                 {allOfferCodes.length > 0 && allOfferCodes.map(item => (

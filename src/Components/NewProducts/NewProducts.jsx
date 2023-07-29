@@ -61,7 +61,7 @@ export default function NewProducts() {
 
                     </Swiper> */}
 
-                    <ProductsSlider products={datas.allProducts} />
+                    <ProductsSlider products={datas.newProducts} />
                 </div>
             </div>
         </div>

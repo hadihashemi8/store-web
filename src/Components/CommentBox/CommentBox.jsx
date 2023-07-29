@@ -1,5 +1,8 @@
 import React from 'react'
 import { AiFillStar, AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
+import user from "/./src/assets/user-profile.png"
+
+
 
 export default function CommentBox() {
     return (
@@ -7,7 +10,7 @@ export default function CommentBox() {
             <div className='w-full flex flex-col items-start md:flex-row md:items-center md:justify-between '>
                 <div className='flex justify-start items-center '>
                     <div className='p-2 w-16 h-16 bg-white rounded-full flex items-center justify-center'>
-                        <img className='rounded-full' src="/./src/assets/user-profile.png" alt="" />
+                        <img className='rounded-full' src={user} alt="" />
                     </div>
                     <p className='mr-2 '>هادی هاشمی</p>
                     <p className='mr-2 '>2 مهر 1400</p>

@@ -13,7 +13,7 @@ const buySlice = createSlice({
 
             const check = state.products.findIndex(item => item.id == action.payload.id)
             if (check !== -1) {
-                if (state.products[check].count == state.products[check].qty) {
+                if (state.products[check].count == state.products[check].qty ) {
                     swal({
                         icon: 'error',
                         title: 'اوپس',
@@ -24,8 +24,16 @@ const buySlice = createSlice({
                 } else {
                     state.products[check].qty += action.payload.qty
                 }
-            } else {
+            } else if(action.payload.count == 0){
+                swal({
+                    icon: 'error',
+                    title: 'اوپس',
+                    text: 'موجودی این محصول تموم شد!',
+                    button: "تایید"
+                })
+            }else{
                 state.products.push(action.payload)
+
             }
 
 

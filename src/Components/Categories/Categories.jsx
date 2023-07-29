@@ -1,27 +1,38 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import p1 from "/./src/assets/categories/cat-1.png"
+import p2 from "/./src/assets/categories/cat-2.png"
+import p3 from "/./src/assets/categories/cat-3.png"
+import p4 from "/./src/assets/categories/cat-4.png"
+import p5 from "/./src/assets/categories/cat-5.png"
+import p6 from "/./src/assets/categories/cat-6.png"
+import p7 from "/./src/assets/categories/cat-7.png"
+import p8 from "/./src/assets/categories/cat-8.png"
+import p9 from "/./src/assets/categories/cat-9.png"
+import p10 from "/./src/assets/categories/cat-10.png"
+import p11 from "/./src/assets/categories/cat-11.png"
 
 
 
 const categoris = [
-    { id: 1, src: "./src/assets/categories/cat-1.png", title: "اسباب بازی کودک و نوزاد" },
-    { id: 2, src: "./src/assets/categories/cat-2.png", title: "محصولات بومی محلی" },
-    { id: 3, src: "./src/assets/categories/cat-3.png", title: "زیبایی وسلامت" },
-    { id: 4, src: "./src/assets/categories/cat-4.png", title: "خانه وآشپزخانه" },
-    { id: 5, src: "./src/assets/categories/cat-5.png", title: "کالای دیجیتال" },
-    { id: 6, src: "./src/assets/categories/cat-6.png", title: "ابزار خودرو" },
-    { id: 7, src: "./src/assets/categories/cat-7.png", title: "ورزش و سفر" },
-    { id: 8, src: "./src/assets/categories/cat-8.png", title: "پوشاک" },
-    { id: 9, src: "./src/assets/categories/cat-9.png", title: "موبایل" },
-    { id: 10, src: "./src/assets/categories/cat-10.png", title: "کالا های سوپر مارکتی" },
-    { id: 11, src: "./src/assets/categories/cat-11.png", title: "کتاب ،لوازم تحریر و هنر" },
+    { id: 1, src: p1, title: "اسباب بازی کودک و نوزاد" },
+    { id: 2, src: p2, title: "محصولات بومی محلی" },
+    { id: 3, src: p3, title: "زیبایی وسلامت" },
+    { id: 4, src: p4, title: "خانه وآشپزخانه" },
+    { id: 5, src: p5, title: "کالای دیجیتال" },
+    { id: 6, src: p6, title: "ابزار خودرو" },
+    { id: 7, src: p7, title: "ورزش و سفر" },
+    { id: 8, src: p8, title: "پوشاک" },
+    { id: 9, src: p9, title: "موبایل" },
+    { id: 10, src: p10, title: "کالا های سوپر مارکتی" },
+    { id: 11, src: p11, title: "کتاب ،لوازم تحریر و هنر" },
 ]
 
 export default function Categories() {
     useEffect(() => {
         AOS.init();
-      }, [])
+    }, [])
 
 
     return (
